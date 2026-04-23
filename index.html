@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transit of Theft | Stolen Cultural Artifacts</title>
+    <meta
+      name="description"
+      content="Investigative storytelling website tracking stolen cultural artifacts, museum holdings, and repatriation debates."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main">
+        <a class="brand" href="#hero">Transit of Theft</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#case">Featured Case</a></li>
+          <li><a href="#journey">The Journey</a></li>
+          <li><a href="#cases">Global Cases</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#ethics">Ethics</a></li>
+          <li><a href="#action">Act</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section container reveal">
+        <p class="kicker">Investigative dossier</p>
+        <h1>How did it even get there?</h1>
+        <p class="lead">
+          Sacred objects are stolen, smuggled, laundered through dealers, and normalized in prestigious galleries. This site tracks
+          the routes, institutions, and ethics behind that pipeline.
+        </p>
+        <div class="hero-metrics" id="heroMetrics"></div>
+      </section>
+
+      <section id="case" class="section container reveal">
+        <h2>Featured Case: Taleju Bhawani Necklace (Nepal)</h2>
+        <p>
+          The jeweled ornament associated with the Taleju Bhawani tradition in Kathmandu became emblematic of Nepal’s claims that
+          religious heritage was removed during decades of weak documentation and conflict-era vulnerability. Researchers, activists,
+          and officials pieced together visual evidence, old photographs, and collection trails to challenge foreign possession.
+        </p>
+        <div class="case-panel">
+          <article>
+            <h3>Why this case matters</h3>
+            <ul>
+              <li>It connects theft with living religious practice, not just antiquities trade.</li>
+              <li>It shows how community-sourced image archives can establish provenance gaps.</li>
+              <li>It highlights pressure campaigns that shifted museums from silence to negotiation.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Current debate</h3>
+            <p>
+              The central question is not only legal title, but whether objects central to ritual identity can ever be ethically
+              detached from their communities. Nepal’s recent return wins suggest sustained, evidence-based diplomacy works.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="journey" class="section container reveal">
+        <h2>The Journey: Theft to Display</h2>
+        <p class="lead-small">A repeating pattern found across many disputed collections.</p>
+        <div class="journey-steps" id="journeySteps"></div>
+      </section>
+
+      <section id="cases" class="section container reveal">
+        <h2>Global Cases in Foreign Institutions</h2>
+        <p class="lead-small">Selected high-profile examples with ongoing public dispute or repatriation pressure.</p>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="europe">Europe</button>
+          <button class="chip" data-filter="north-america">North America</button>
+          <button class="chip" data-filter="ongoing">Dispute Ongoing</button>
+          <button class="chip" data-filter="progress">Repatriation Progress</button>
+        </div>
+        <div class="card-grid" id="caseGrid"></div>
+      </section>
+
+      <section id="timeline" class="section container reveal">
+        <h2>Timeline Patterns</h2>
+        <p class="lead-small">
+          Most routes follow the same sequence: local removal, illicit export, provenance laundering, then institutional validation.
+        </p>
+        <div class="timeline-wrap">
+          <ol class="timeline" id="timelineList"></ol>
+          <aside class="timeline-detail" id="timelineDetail">
+            <h3>Select an event</h3>
+            <p>Click timeline points to inspect how long objects can remain contested after display.</p>
+          </aside>
+        </div>
+        <div class="chart-block">
+          <h3>Activism Pressure vs. Public Commitments (2010–2025)</h3>
+          <div class="chart" id="chart" role="img" aria-label="Bar chart comparing activism pressure and public commitments"></div>
+        </div>
+      </section>
+
+      <section id="ethics" class="section container reveal">
+        <h2>Ethics, Law, and Repatriation Debates</h2>
+        <div class="expandables">
+          <article class="expandable">
+            <button class="expand-toggle" aria-expanded="false">Universal museum argument</button>
+            <div class="expand-content">
+              <p>
+                Some museums argue global collections create cross-cultural education. Critics respond that education cannot justify
+                possession when removal involved coercion, conflict, or colonial asymmetry.
+              </p>
+            </div>
+          </article>
+          <article class="expandable">
+            <button class="expand-toggle" aria-expanded="false">Legal ownership vs. ethical legitimacy</button>
+            <div class="expand-content">
+              <p>
+                Bills of sale, dealer records, and old export permits may satisfy narrow legal standards while still failing ethical
+                scrutiny if the source context was compromised or undocumented.
+              </p>
+            </div>
+          </article>
+          <article class="expandable">
+            <button class="expand-toggle" aria-expanded="false">What is changing now</button>
+            <div class="expand-content">
+              <p>
+                Source-country diplomacy, open-source provenance investigations, and social campaigns are forcing museums to publish
+                acquisition histories and negotiate returns. Public sentiment increasingly favors restitution of sacred objects.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="action" class="section container reveal">
+        <h2>Call to Action</h2>
+        <p>
+          Repatriation succeeds when evidence is public, institutions are accountable, and audiences refuse to treat looted heritage
+          as neutral décor.
+        </p>
+        <ul class="action-list">
+          <li>Support provenance transparency policies in museums you visit.</li>
+          <li>Follow and amplify source-community researchers and activists.</li>
+          <li>Ask institutions to publish acquisition records for contested pieces.</li>
+          <li>Track return commitments and demand timelines, not statements.</li>
+        </ul>
+        <a class="cta" href="#cases">Review the documented cases</a>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p><strong>Transit of Theft</strong> — Investigative editorial on stolen cultural artifacts and repatriation pathways.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
